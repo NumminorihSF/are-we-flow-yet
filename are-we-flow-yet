@@ -8,6 +8,7 @@ var files = glob.sync(base + '/**/*.js');
 
 var FLOW_REGEXPS = [
   /\/\*\s*@flow\s*\*\//g,
+  /\/\*\s*(\n\s*\*\s*)*@flow\s*\*\//g,
   /\/\/\s+@flow\s+/g,
   /\/\/\s+@flow$/mg
 ];
